@@ -1,0 +1,12 @@
+.venv/
+runs/
+**/target/
+**/__pycache__/
+*.pyc
+CTA/*.aux
+CTA/*.log
+CTA/*.out
+CTA/*.fls
+CTA/*.fdb_latexmk
+CTA/cta.pdf
+# Keep archived CSV, SQLite, JSON, lockfiles and protocol bundles tracked.
