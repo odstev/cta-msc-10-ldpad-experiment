@@ -1,9 +1,7 @@
 # CTA: LDPAD experiments for K3s edge nodes
 
 Rust source, locked Cargo dependencies, experiment drivers, saved observations,
-and analysis for the morning manuscript of 8 November 2026. The master manuscript
-is `CTA/cta.tex`, sourced from the 07:42 EAT version. No results from the superseded
-afternoon manuscript are used.
+and analysis for LDPAD .
 
 ## Start here: reproduce the reported numbers
 
