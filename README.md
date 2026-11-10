@@ -165,7 +165,3 @@ The original prospective plan and Git bundles are retained without rewriting
 their dates. New repository scripts are retrospective packaging, not
 preregistration. See `docs/PROVENANCE.md` for sources and `docs/GITHUB.md` for upload steps.
 
-AI assistance: ChatGPT assisted with the evaluation code, analysis and this
-repository packaging; the manuscript includes the broader tool disclosure.
-Original authorship and any existing license notices remain unchanged. No new
-open-source license is assigned on the authors' behalf.
