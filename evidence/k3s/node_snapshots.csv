@@ -1,0 +1,13 @@
+capture_group,captured_at,node,cpu_millicores,memory_mib,provenance
+baseline,2026-11-08T05:06:54+03:00,user,269,3973,terminal_screenshot_transcription
+baseline,2026-11-08T05:07:09+03:00,user,60,3970,terminal_screenshot_transcription
+baseline,2026-11-08T05:07:24+03:00,user,48,3970,terminal_screenshot_transcription
+baseline,2026-11-08T05:07:40+03:00,user,34,3987,terminal_screenshot_transcription
+later_visible_excerpt,2026-11-08T05:22:44+03:00,user,40,4061,terminal_screenshot_transcription
+later_visible_excerpt,2026-11-08T05:22:59+03:00,user,49,4065,terminal_screenshot_transcription
+later_visible_excerpt,2026-11-08T05:23:15+03:00,user,43,4065,terminal_screenshot_transcription
+later_visible_excerpt,2026-11-08T05:23:30+03:00,user,26,4066,terminal_screenshot_transcription
+later_visible_excerpt,2026-11-08T05:23:45+03:00,user,41,4070,terminal_screenshot_transcription
+later_visible_excerpt,2026-11-08T05:24:00+03:00,user,25,4070,terminal_screenshot_transcription
+later_visible_excerpt,2026-11-08T05:24:15+03:00,user,35,4070,terminal_screenshot_transcription
+later_visible_excerpt,2026-11-08T05:24:30+03:00,user,27,4070,terminal_screenshot_transcription

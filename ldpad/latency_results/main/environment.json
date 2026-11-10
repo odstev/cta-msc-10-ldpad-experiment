@@ -1,0 +1,39 @@
+{
+  "capture_note": "Environment recorded after the main run, based on the same host and project sources.",
+  "run_completed_utc": "2026-11-01T11:53:56.131453+00:00",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "architecture": "x86_64",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "filesystem_type": "overlayfs",
+  "storage_media_identity": "unknown; shared overlay filesystem",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "cargo": "cargo 1.99.1 (5f94df478 2026-08-27)",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "monotonic_clock_resolution_s": 1e-09,
+  "cpu_pinning": "none explicitly set",
+  "warmup": "none explicitly set",
+  "sqlite": "bundled SQLite 3.50.2, WAL, synchronous FULL",
+  "probe_method": "LD_PRELOAD wraps actual libc fsync/fdatasync calls on SQLite worker thread during commit",
+  "seeds": 30,
+  "requests_per_seed_per_rate": 10,
+  "rates_per_second": [
+    1,
+    10,
+    100
+  ],
+  "object_sizes_bytes": [
+    1024,
+    4096,
+    10240,
+    25600,
+    51200
+  ],
+  "sha256": {
+    "Cargo.toml": "1f8b3a15fde6cfb7e5812427854fd2415ea20eeb8a78698c1125a799a7c63c2d",
+    "Cargo.lock": "c22e1f60455303c26b166f8e0ceb8faf028164581bff2dd4b3115fb912c0e98b",
+    "examples/latency_open_loop.rs": "24be59911a0ce2b3524cb69e4dfc2e04153b62e090c1ecc9486bbca43125f4da",
+    "native/sync_probe.c": "81f19ed5a49b06f2dfa2c3f76a3cd791f3fc642e18698d5583498221e3ae7fb7",
+    "scripts/analyse_latency.py": "12806643cb2b203588c86d95c75a8877c8a8c35d841e2e4e966cc6fc2fe8aedc"
+  }
+}

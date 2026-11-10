@@ -1,0 +1,53 @@
+{
+  "id": "02_config_only",
+  "description": "Sustained high static configuration risk.",
+  "duration_s": 3600,
+  "risk_order": [
+    "static",
+    "drift",
+    "threat",
+    "runtime"
+  ],
+  "grid_core": true,
+  "segments": [
+    {
+      "start_s": 0,
+      "end_s": 300,
+      "risks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 300,
+      "end_s": 1800,
+      "risks": [
+        90,
+        0,
+        0,
+        0
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 1800,
+      "end_s": 3600,
+      "risks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_mode": "Normal"
+    }
+  ],
+  "snapshots": [
+    {
+      "label": "Config only",
+      "time_s": 1000
+    }
+  ]
+}

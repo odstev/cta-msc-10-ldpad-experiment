@@ -1,0 +1,48 @@
+{
+  "id": "08_runtime_pulse_2s",
+  "description": "One isolated 2-second high runtime pulse treated as nuisance noise by the design label.",
+  "duration_s": 3600,
+  "risk_order": [
+    "static",
+    "drift",
+    "threat",
+    "runtime"
+  ],
+  "grid_core": false,
+  "segments": [
+    {
+      "start_s": 0,
+      "end_s": 600,
+      "risks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 600,
+      "end_s": 602,
+      "risks": [
+        0,
+        0,
+        0,
+        95
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 602,
+      "end_s": 3600,
+      "risks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_mode": "Normal"
+    }
+  ],
+  "snapshots": []
+}

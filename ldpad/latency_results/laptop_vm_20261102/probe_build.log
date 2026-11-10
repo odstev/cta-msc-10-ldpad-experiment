@@ -1,0 +1,2 @@
+COMMAND: ['cc', '-O2', '-fPIC', '-shared', '-Wall', '-Wextra', '-Werror', '-o', '/home/user/vm_pilot_01/libsync_probe.so', 'native/sync_probe.c', '-ldl', '-pthread']
+

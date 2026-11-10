@@ -1,0 +1,27 @@
+{
+  "generated_utc": "2026-11-01T17:33:03.156750+00:00",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "cargo": "cargo 1.99.1 (5f94df478 2026-08-27)",
+  "rustflags": "--cfg madsim",
+  "madsim_seed": 0,
+  "scenario_protocol_commit": "e4cbc35665b51cc1fbe0bb13752c8141b4ee560a",
+  "sha256": {
+    "src/risk.rs": "a599d2e210e022d48059297cf909fd8f2e4391df1cc834a5b2f09eff0ae8aa5b",
+    "src/fusion.rs": "a2c853ec9966c654bd43815cd5e56e33a4ea6b8d06502c19f33a2f43468f5999",
+    "fusion_study/Cargo.toml": "b6aea1fcc4be3e1936e6db006a50976c1ff155e8a173a06b26de4e0fb549953c",
+    "fusion_study/Cargo.lock": "5ee861f2dbff13d36d1228728eb7870e0c3a201e41aa8f4036c4673a689382fd",
+    "fusion_study/src/main.rs": "a4d915ad2d33748779350812486f5cc6446fc7d2ce816cf5cad46285611d335b",
+    "scripts/analyse_fusion.py": "261847ed27b838baf8ae6d6e1db528418e6a1175f9ba38cc041f4617fc8e06fe",
+    "scripts/reproduce_fusion.py": "03a5d43707827868734d6829f4606922d0b1059e6af4ce9b366a1dda62f29604",
+    "fusion_study/scenarios/01_clean.json": "8f8a10a21d7069f27cb66ad56b32e0624625c7051fa062a4f3716c1c8ca02e9e",
+    "fusion_study/scenarios/02_config_only.json": "ccfd685e39499ef3fbc33fa009190eecd032495bed6313e3a4978eaaa553895b",
+    "fusion_study/scenarios/03_cve_only.json": "bc79e7ca9deffae73191ad399a0a21d3282c66735f9ba551cb6be9f70be669ad",
+    "fusion_study/scenarios/04_runtime_only.json": "cfe87efb4b7ff26453cba70efed0cbca669a8fe2f5fb4e8402fe3ff926d7a2f7",
+    "fusion_study/scenarios/05_ramp.json": "046e9ce83fe5c577ad5cf6d3d900d7172bc2df7d03876c3a8d071edc0994c56a",
+    "fusion_study/scenarios/06_combined.json": "f1f803e14b37ea5467ad52596c7d2810bdde6ffb7ec18e1410a8589ff5ae6eb5",
+    "fusion_study/scenarios/07_threshold_noise.json": "f807edca8d32dca47c4bfb6a16352df04329c29a8394bb111d9da2b5dc4d9377",
+    "fusion_study/scenarios/08_runtime_pulse_2s.json": "2db5c2435020ff2f0fb7d21e9ca99abf8f6c1212564a39c90898b3e96b74da37",
+    "fusion_study/scenarios/09_runtime_pulse_3s.json": "ecd3356c1e19f7f2a05ac36b6f89c14922c4d4a623e8c5b32783646b217f3123"
+  }
+}

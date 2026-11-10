@@ -1,0 +1,14 @@
+{
+  "generated_utc": "2026-11-01T11:54:53.332804+00:00",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "architecture": "x86_64",
+  "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+  "cargo": "cargo 1.99.1 (5f94df478 2026-08-27)",
+  "sha256": {
+    "Cargo.toml": "1f8b3a15fde6cfb7e5812427854fd2415ea20eeb8a78698c1125a799a7c63c2d",
+    "Cargo.lock": "c22e1f60455303c26b166f8e0ceb8faf028164581bff2dd4b3115fb912c0e98b",
+    "src/anomaly.rs": "5abd915aeab47e646a30b131eeb438bf6489cd7736b9185923e32aef7487c27b",
+    "examples/seeded_detector.rs": "504a03389aa26783dd02037c5821d677d6abbc87557e7c533212a5077683d177"
+  },
+  "description": "Unchanged supplied Rust detector; added seeded synthetic metric generator and labels. Not a platform or production comparison."
+}

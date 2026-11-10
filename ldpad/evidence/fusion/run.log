@@ -1,0 +1,86 @@
+$ /workspace/scratch/d58411c2fdde/rust_runtime/cargo/bin/cargo test --release --locked
+warning: function `mode_rank` is never used
+  --> src/../../src/fusion.rs:53:8
+   |
+53 | pub fn mode_rank(mode: PolicyMode) -> u8 {
+   |        ^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `ldpad-fusion-study` (bin "ldpad-fusion-study" test) generated 1 warning
+    Finished `release` profile [optimized] target(s) in 0.03s
+     Running unittests src/main.rs (target/release/deps/ldpad_fusion_study-95f76b56b0d18451)
+
+running 6 tests
+test fusion::tests::hysteresis_counts_new_direction_separately ... ok
+test fusion::tests::isolated_risks_and_floor_match_the_documented_equations ... ok
+test risk::tests::high_risk_yields_strict_mode ... ok
+test fusion::tests::fast_path_requires_three_consecutive_seconds ... ok
+test risk::tests::low_risk_yields_normal_mode ... ok
+test risk::tests::weights_sum_to_one ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+$ /workspace/scratch/d58411c2fdde/rust_runtime/cargo/bin/cargo run --release --locked
+warning: function `mode_rank` is never used
+  --> src/../../src/fusion.rs:53:8
+   |
+53 | pub fn mode_rank(mode: PolicyMode) -> u8 {
+   |        ^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `ldpad-fusion-study` (bin "ldpad-fusion-study") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 0.03s
+     Running `target/release/ldpad-fusion-study`
+Virtual seconds: 97200; grid pass counts: [0, 0, 939] / 1771
+Wrote raw observations and transitions to /workspace/scratch/d58411c2fdde/correction4_work/ldpad_latency/evidence/fusion
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/d58411c2fdde/correction4_work/ldpad_latency/scripts/analyse_fusion.py
+{
+  "linear": {
+    "core_correct_seconds": 16265,
+    "core_total_seconds": 21600,
+    "core_correct_mode_percent": 75.30092592592592,
+    "all_correct_seconds": 26917,
+    "all_total_seconds": 32400,
+    "all_correct_mode_percent": 83.07716049382717,
+    "all_transitions": 10,
+    "all_transitions_per_hour": 1.1111111111111112,
+    "all_flaps_300s": 0,
+    "grid_pass": 0,
+    "grid_total": 1771,
+    "grid_pass_percent": 0.0
+  },
+  "noisy_or": {
+    "core_correct_seconds": 16265,
+    "core_total_seconds": 21600,
+    "core_correct_mode_percent": 75.30092592592592,
+    "all_correct_seconds": 24844,
+    "all_total_seconds": 32400,
+    "all_correct_mode_percent": 76.67901234567901,
+    "all_transitions": 12,
+    "all_transitions_per_hour": 1.3333333333333333,
+    "all_flaps_300s": 0,
+    "grid_pass": 0,
+    "grid_total": 1771,
+    "grid_pass_percent": 0.0
+  },
+  "max_with_floor": {
+    "core_correct_seconds": 20225,
+    "core_total_seconds": 21600,
+    "core_correct_mode_percent": 93.63425925925925,
+    "all_correct_seconds": 30610,
+    "all_total_seconds": 32400,
+    "all_correct_mode_percent": 94.4753086419753,
+    "all_transitions": 20,
+    "all_transitions_per_hour": 2.2222222222222223,
+    "all_flaps_300s": 2,
+    "grid_pass": 939,
+    "grid_total": 1771,
+    "grid_pass_percent": 53.02089215132693
+  }
+}
+Runtime-only transitions: [{'rule': 'max_with_floor', 'scenario': '04_runtime_only', 'time_s': 303, 'from_mode': 'Normal', 'to_mode': 'Strict', 'reason': 'runtime_fast_path', 'score': '81.000000', 'runtime': '95'}, {'rule': 'max_with_floor', 'scenario': '04_runtime_only', 'time_s': 1950, 'from_mode': 'Strict', 'to_mode': 'Moderate', 'reason': 'dwell', 'score': '0.000000', 'runtime': '0'}, {'rule': 'max_with_floor', 'scenario': '04_runtime_only', 'time_s': 2070, 'from_mode': 'Moderate', 'to_mode': 'Normal', 'reason': 'dwell', 'score': '0.000000', 'runtime': '0'}]
+Three-second pulse: {'rule': 'max_with_floor', 'scenario': '09_runtime_pulse_3s', 'core': False, 'correct_seconds': 3333, 'total_seconds': 3600, 'correct_mode_percent': 92.58333333333333, 'time_to_at_least_moderate_s': 'NA', 'time_to_strict_s': 'NA', 'transitions': 3, 'transitions_per_hour': 3.0, 'flaps_300s': 2}

@@ -1,0 +1,20 @@
+PLANNED COMMANDS ONLY: no network experiment has been performed.
+Run only inside a disposable, pre-created test network namespace on an
+identified test interface. Save original qdisc, routes, kernel and tc version.
+Replace IFACE and SEED deliberately. Apply and measure separately in each
+needed direction; never substitute a management interface.
+
+# Independent random loss, 300 ms one-way delay:
+tc qdisc replace dev IFACE root netem delay 300ms loss random 20% seed SEED
+# Gilbert--Elliott: p=2.5%, r=10%, bad-loss=100%, good-loss=0%:
+tc qdisc replace dev IFACE root netem delay 300ms loss gemodel 2.5% 10% 100% 0% seed SEED
+# Planned complete remote-link partition (not the local API/log):
+tc qdisc replace dev IFACE root netem loss random 100% seed SEED
+# Collect before and after each condition:
+tc -s qdisc show dev IFACE
+
+Cleanup is specific to the disposable namespace and must restore the saved
+configuration. Each netem command changes only egress. Packet loss measured
+at the selected qdisc may differ from application-level delivery because of
+TCP retransmissions and finite samples. Verify observed rate, effective delay,
+packet directions, and that each labelled attack actually uses this path.

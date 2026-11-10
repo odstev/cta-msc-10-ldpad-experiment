@@ -1,0 +1,818 @@
+{
+  "id": "07_threshold_noise",
+  "description": "Repeated 30-second threshold oscillation; labels encode the no-escalation noise assumption.",
+  "duration_s": 3600,
+  "risk_order": [
+    "static",
+    "drift",
+    "threat",
+    "runtime"
+  ],
+  "grid_core": false,
+  "segments": [
+    {
+      "start_s": 0,
+      "end_s": 300,
+      "risks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 300,
+      "end_s": 330,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 330,
+      "end_s": 360,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 360,
+      "end_s": 390,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 390,
+      "end_s": 420,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 420,
+      "end_s": 450,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 450,
+      "end_s": 480,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 480,
+      "end_s": 510,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 510,
+      "end_s": 540,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 540,
+      "end_s": 570,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 570,
+      "end_s": 600,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 600,
+      "end_s": 630,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 630,
+      "end_s": 660,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 660,
+      "end_s": 690,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 690,
+      "end_s": 720,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 720,
+      "end_s": 750,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 750,
+      "end_s": 780,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 780,
+      "end_s": 810,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 810,
+      "end_s": 840,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 840,
+      "end_s": 870,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 870,
+      "end_s": 900,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 900,
+      "end_s": 930,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 930,
+      "end_s": 960,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 960,
+      "end_s": 990,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 990,
+      "end_s": 1020,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1020,
+      "end_s": 1050,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1050,
+      "end_s": 1080,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1080,
+      "end_s": 1110,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1110,
+      "end_s": 1140,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1140,
+      "end_s": 1170,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1170,
+      "end_s": 1200,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1200,
+      "end_s": 1230,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1230,
+      "end_s": 1260,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1260,
+      "end_s": 1290,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1290,
+      "end_s": 1320,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1320,
+      "end_s": 1350,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1350,
+      "end_s": 1380,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1380,
+      "end_s": 1410,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1410,
+      "end_s": 1440,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1440,
+      "end_s": 1470,
+      "risks": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1470,
+      "end_s": 1500,
+      "risks": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 1500,
+      "end_s": 2100,
+      "risks": [
+        65,
+        65,
+        65,
+        65
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2100,
+      "end_s": 2130,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2130,
+      "end_s": 2160,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2160,
+      "end_s": 2190,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2190,
+      "end_s": 2220,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2220,
+      "end_s": 2250,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2250,
+      "end_s": 2280,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2280,
+      "end_s": 2310,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2310,
+      "end_s": 2340,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2340,
+      "end_s": 2370,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2370,
+      "end_s": 2400,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2400,
+      "end_s": 2430,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2430,
+      "end_s": 2460,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2460,
+      "end_s": 2490,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2490,
+      "end_s": 2520,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2520,
+      "end_s": 2550,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2550,
+      "end_s": 2580,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2580,
+      "end_s": 2610,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2610,
+      "end_s": 2640,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2640,
+      "end_s": 2670,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2670,
+      "end_s": 2700,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2700,
+      "end_s": 2730,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2730,
+      "end_s": 2760,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2760,
+      "end_s": 2790,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2790,
+      "end_s": 2820,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2820,
+      "end_s": 2850,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2850,
+      "end_s": 2880,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2880,
+      "end_s": 2910,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2910,
+      "end_s": 2940,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2940,
+      "end_s": 2970,
+      "risks": [
+        78,
+        78,
+        78,
+        78
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 2970,
+      "end_s": 3000,
+      "risks": [
+        82,
+        82,
+        82,
+        82
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 3000,
+      "end_s": 3600,
+      "risks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_mode": "Normal"
+    }
+  ],
+  "snapshots": []
+}

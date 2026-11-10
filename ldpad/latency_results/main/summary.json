@@ -1,0 +1,156 @@
+{
+  "description": "Exploratory loopback AdmissionReview HTTP -> Regorus policy -> SQLite WAL/FULL commit -> HTTP response; host and storage are documented separately",
+  "primary_boundary": "scheduled client arrival to complete HTTP response after successful SQLite commit",
+  "sync_share_definition": "sum of intercepted fsync/fdatasync times during commit divided by sum of server accept-to-commit times",
+  "bootstrap": "10000 resamples of the seed-level blocks per rate, percentile intervals for latency quantiles, observed maximum and sync share",
+  "percentile_note": "Primary percentiles use nearest ranks of raw nanosecond records; HDR values are retained separately. P99.9 may equal maximum or another percentile; no ordering is manufactured",
+  "results": [
+    {
+      "rate_hz": 1,
+      "seeds": 30,
+      "requests": 300,
+      "objects_bytes": [
+        1024,
+        4096,
+        10240,
+        25600,
+        51200
+      ],
+      "p50_ms": 2.696414,
+      "p95_ms": 4.193136,
+      "p99_ms": 8.240781,
+      "p50_ci_ms": [
+        2.608377,
+        2.780896
+      ],
+      "p95_ci_ms": [
+        3.663779,
+        4.656345
+      ],
+      "p99_ci_ms": [
+        5.040977,
+        30.606831
+      ],
+      "p999_ci_ms": [
+        8.240781,
+        92.823075
+      ],
+      "max_ci_ms": [
+        8.240781,
+        92.823075
+      ],
+      "p999_ms": 92.823075,
+      "max_observed_ms": 92.823075,
+      "hdr_raw_p99_ms": 8.241151,
+      "fsync_share_percent": 74.23826827252984,
+      "fsync_share_ci_percent": [
+        64.78561739676172,
+        82.34019892636891
+      ],
+      "total_sync_calls": 303,
+      "corrected_hist_count": 300,
+      "corrected_p99_ms": 8.241151,
+      "p99_scheduler_lag_ms": 2.492014,
+      "expected_interval_ms": 1000.0
+    },
+    {
+      "rate_hz": 10,
+      "seeds": 30,
+      "requests": 300,
+      "objects_bytes": [
+        1024,
+        4096,
+        10240,
+        25600,
+        51200
+      ],
+      "p50_ms": 2.623311,
+      "p95_ms": 3.498377,
+      "p99_ms": 4.537237,
+      "p50_ci_ms": [
+        2.510403,
+        2.788591
+      ],
+      "p95_ci_ms": [
+        3.301529,
+        3.93781
+      ],
+      "p99_ci_ms": [
+        3.563498,
+        5.25913
+      ],
+      "p999_ci_ms": [
+        4.533462,
+        7.862374
+      ],
+      "max_ci_ms": [
+        4.533462,
+        7.862374
+      ],
+      "p999_ms": 7.862374,
+      "max_observed_ms": 7.862374,
+      "hdr_raw_p99_ms": 4.538367,
+      "fsync_share_percent": 65.06490074528617,
+      "fsync_share_ci_percent": [
+        63.457794274258625,
+        66.59225821949704
+      ],
+      "total_sync_calls": 303,
+      "corrected_hist_count": 300,
+      "corrected_p99_ms": 4.538367,
+      "p99_scheduler_lag_ms": 2.232014,
+      "expected_interval_ms": 100.0
+    },
+    {
+      "rate_hz": 100,
+      "seeds": 30,
+      "requests": 300,
+      "objects_bytes": [
+        1024,
+        4096,
+        10240,
+        25600,
+        51200
+      ],
+      "p50_ms": 2.225055,
+      "p95_ms": 3.205046,
+      "p99_ms": 4.746697,
+      "p50_ci_ms": [
+        2.099857,
+        2.438448
+      ],
+      "p95_ci_ms": [
+        2.953246,
+        3.384771
+      ],
+      "p99_ci_ms": [
+        3.420388,
+        5.682977
+      ],
+      "p999_ci_ms": [
+        4.746697,
+        12.899911
+      ],
+      "max_ci_ms": [
+        4.746697,
+        12.899911
+      ],
+      "p999_ms": 12.899911,
+      "max_observed_ms": 12.899911,
+      "hdr_raw_p99_ms": 4.747263,
+      "fsync_share_percent": 71.77079599540595,
+      "fsync_share_ci_percent": [
+        69.52174905837572,
+        74.07721846596819
+      ],
+      "total_sync_calls": 300,
+      "corrected_hist_count": 300,
+      "corrected_p99_ms": 4.747263,
+      "p99_scheduler_lag_ms": 2.038967,
+      "expected_interval_ms": 10.0
+    }
+  ],
+  "successes": 900,
+  "database_rows": 900,
+  "probe_active_all": true
+}

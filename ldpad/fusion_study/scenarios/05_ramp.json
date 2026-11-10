@@ -1,0 +1,79 @@
+{
+  "id": "05_ramp",
+  "description": "Expected target progresses from Normal to Moderate to Strict and recovers.",
+  "duration_s": 3600,
+  "risk_order": [
+    "static",
+    "drift",
+    "threat",
+    "runtime"
+  ],
+  "grid_core": true,
+  "segments": [
+    {
+      "start_s": 0,
+      "end_s": 300,
+      "risks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 300,
+      "end_s": 900,
+      "risks": [
+        45,
+        35,
+        35,
+        35
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 900,
+      "end_s": 1800,
+      "risks": [
+        70,
+        60,
+        60,
+        60
+      ],
+      "expected_mode": "Moderate"
+    },
+    {
+      "start_s": 1800,
+      "end_s": 2700,
+      "risks": [
+        95,
+        95,
+        95,
+        95
+      ],
+      "expected_mode": "Strict"
+    },
+    {
+      "start_s": 2700,
+      "end_s": 3600,
+      "risks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_mode": "Normal"
+    }
+  ],
+  "snapshots": [
+    {
+      "label": "Ramp: medium",
+      "time_s": 1400
+    },
+    {
+      "label": "Ramp: high",
+      "time_s": 2300
+    }
+  ]
+}

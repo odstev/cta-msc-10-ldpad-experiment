@@ -1,0 +1,41 @@
+COMMAND: ['/workspace/scratch/d58411c2fdde/rust_runtime/cargo/bin/cargo', 'test', '--locked', '--release', '--all-features', '--', '--nocapture']
+
+    Finished `release` profile [optimized] target(s) in 0.12s
+     Running unittests src/lib.rs (/workspace/scratch/d58411c2fdde/rust_execution/original_project/target/release/deps/ldpad-9494a53cd0ac3a8d)
+
+running 13 tests
+test anomaly::tests::detects_large_outlier ... ok
+test drift::tests::detects_drift ... ok
+test drift::tests::no_drift_no_event ... ok
+test anomaly::tests::stable_baseline_no_false_positive ... ok
+test risk::tests::high_risk_yields_strict_mode ... ok
+test risk::tests::weights_sum_to_one ... ok
+test static_posture::tests::bad_resource_scores_high ... ok
+test static_posture::tests::good_resource_scores_zero ... ok
+test risk::tests::low_risk_yields_normal_mode ... ok
+test stats::tests::mean_of_uniform ... ok
+test threat_intel::tests::scores_matched_signature ... ok
+test threat_intel::tests::no_match_no_score ... ok
+test stats::tests::ci_brackets_mean ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (/workspace/scratch/d58411c2fdde/rust_execution/original_project/target/release/deps/ldpad-8307b93401a9e5ff)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/e2e.rs (/workspace/scratch/d58411c2fdde/rust_execution/original_project/target/release/deps/e2e-d998dfb378d212a1)
+
+running 1 test
+test end_to_end_escalation ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests ldpad
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

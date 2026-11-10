@@ -1,0 +1,9 @@
+{
+  "provenance": "Transcribed from user-supplied terminal screenshots and reported count; not a raw VM CSV",
+  "seeded": {"configured_seeds":30,"rows":15000,"injected_ticks":300,"same_tick_cpu_alerts":300,"eligible_non_injection_ticks":13800,"alerted_non_injection_ticks":198},
+  "unseeded_alert_ticks": [16,14,18],
+  "each_unseeded_run": {"iterations":500,"normal_ticks":500,"moderate_ticks":0,"strict_ticks":0,"peak_risk":45.0},
+  "tests_observed": {"library_passed":16,"integration_passed":1,"node_replay_unit_tests_passed":3},
+  "raw_vm_ticks_available": false,
+  "node_replay_execution_observed": false
+}

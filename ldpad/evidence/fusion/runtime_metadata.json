@@ -1,0 +1,19 @@
+{
+  "cfg_madsim": true,
+  "core_scenarios": 6,
+  "grid_method": "one-second replay of the same adapter and six core fixtures; 300-second grace after an expected-mode change",
+  "grid_pass_counts": [
+    0,
+    0,
+    939
+  ],
+  "grid_vectors": 1771,
+  "madsim_seed": 0,
+  "rules": 3,
+  "scenarios": 9,
+  "simulator": "madsim 0.2.34",
+  "stress_scenarios": 3,
+  "virtual_seconds_per_scenario": 3600,
+  "virtual_seconds_total": 97200,
+  "warning": "Synthetic, design-labelled component simulation; not deployment or independently verified attack truth."
+}

@@ -1,0 +1,53 @@
+{
+  "id": "04_runtime_only",
+  "description": "Sustained high runtime risk.",
+  "duration_s": 3600,
+  "risk_order": [
+    "static",
+    "drift",
+    "threat",
+    "runtime"
+  ],
+  "grid_core": true,
+  "segments": [
+    {
+      "start_s": 0,
+      "end_s": 300,
+      "risks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_mode": "Normal"
+    },
+    {
+      "start_s": 300,
+      "end_s": 1800,
+      "risks": [
+        0,
+        0,
+        0,
+        95
+      ],
+      "expected_mode": "Strict"
+    },
+    {
+      "start_s": 1800,
+      "end_s": 3600,
+      "risks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_mode": "Normal"
+    }
+  ],
+  "snapshots": [
+    {
+      "label": "Runtime only",
+      "time_s": 1000
+    }
+  ]
+}
