@@ -1,0 +1,11 @@
+OVERLEAF QUICK START
+
+1. Download the full ZIP file.
+2. In Overleaf, select New Project > Upload Project and select the ZIP.
+3. In Menu / Settings, choose pdfLaTeX and set the main document to cta.tex.
+4. Recompile. If necessary, select Recompile from scratch.
+
+Do not upload only cta.tex. Keep the included ieeeaccess.cls and the
+figures, generated and literature folders exactly as supplied.
+
+For more detail, open README.md in the project.

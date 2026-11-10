@@ -1,0 +1,17 @@
+\begin{tabular}{|p{55pt}|p{85pt}|p{60pt}|}
+\hline
+\textbf{Layer} & \textbf{Crate} & \textbf{Status} \\
+\hline
+Serialisation & \texttt{serde}, \texttt{serde\_json} & In use \\
+Hashing & \texttt{sha2}, \texttt{hex} & In use \\
+Randomness & \texttt{rand}, \texttt{rand\_distr} & In use \\
+CLI & \texttt{clap} & In use \\
+Tail latency & \texttt{hdrhistogram} & Pilot \\
+Benchmarking & \texttt{criterion} & Dev dependency \\
+Async runtime & \texttt{tokio} & Latency pilot \\
+Policy and log & \texttt{regorus}, \texttt{rusqlite} & Latency pilot \\
+Statistics & in-house \texttt{stats.rs} & In use \\
+Deterministic simulation & \texttt{madsim} & Separate prototype \\
+Other planned services & \texttt{turmoil}, \texttt{openraft}, \texttt{tonic} & Not direct dependencies \\
+\hline
+\end{tabular}
