@@ -1,0 +1,45 @@
+name: Run LDPAD Rust project
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+
+    defaults:
+      run:
+        working-directory: ldpad
+        shell: bash
+
+    steps:
+      - name: Download repository
+        uses: actions/checkout@v4
+
+      - name: Prepare Rust
+        run: |
+          rustup toolchain install stable --profile minimal
+          rustup default stable
+          rustc --version
+          cargo --version
+
+      - name: Build the program
+        run: cargo build --locked --release
+
+      - name: Run tests
+        run: cargo test --locked --release
+
+      - name: Run LDPAD
+        run: |
+          set -o pipefail
+          cargo run --locked --release --bin ldpad 2>&1 | tee ldpad-output.txt
+
+      - name: Save program output
+        uses: actions/upload-artifact@v4
+        with:
+          name: ldpad-program-output
+          path: ldpad/ldpad-output.txt
